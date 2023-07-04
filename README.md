@@ -8,4 +8,4 @@
   <li>CHAT GPT</li>
 </ul>
 <br/>
-<p>A paragraph game based on making choices in each paragraph, filling-in map of the area and maintaining statistics (health, stamina and luck).</p>
+<p>A paragraph game based on making choices, filling-in map of the area and maintaining statistics (health, stamina and luck).</p>
