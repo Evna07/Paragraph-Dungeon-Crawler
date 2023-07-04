@@ -1,0 +1,260 @@
+:root {
+  --selected-color-forest: green;
+  --selected-color-mountains: darkgrey;
+  --selected-color-sea: blue;
+  --selected-color-sand: #ebc55e;
+  --selected-color-calamity: purple;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Navigation */
+#title-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  text-transform: capitalize;
+}
+
+nav h1 {
+  text-transform: uppercase;
+}
+
+#title-navigation ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+#title-navigation li {
+  margin: 0;
+  padding: 0;
+}
+
+#title-navigation li:not(:last-child) {
+  border-right: 1px solid black;
+}
+
+#title-navigation li a {
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+#title-navigation li a:hover {
+  color: lightgray;
+  background-color: darkgray;
+}
+/*main book*/
+#book-container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #666;
+  font-family: Arial, sans-serif;
+}
+/*left page*/
+#left-page {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  text-align: justify;
+}
+
+#left-page::-webkit-scrollbar {
+    display: none;
+}
+
+/*right page*/
+#right-page {
+  width: 45%;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: auto;
+  position: relative;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+#right-page::-webkit-scrollbar {
+    display: none;
+}
+
+#right-page h2 {
+  margin-top: -10px;
+}
+
+/*map and legend*/
+#grid-legend-container {
+  display: inline-block;
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+/*map*/
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15px);
+  grid-auto-rows: 15px;
+  grid-gap: 1px;
+  border: 1px solid black;
+  width: 335px;
+  height: 335px;
+  padding: 5px;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+  background-color: brown;
+  border-radius: 5px;
+}
+
+.grid-item {
+  background-color: lightgray;
+  border: 1px solid gray;
+}
+/*legend*/
+#legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 10px;
+  background-color: #F5F5DC;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100px;
+}
+
+#legend h2 {
+  margin-top: 0;
+}
+
+.legend-item {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-left: -30px;
+}
+
+.legend-item:before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+/* Add new CSS styles for the radio buttons */
+.legend-item input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+.legend-item.forest.active:before {
+  background-color: var(--selected-color-forest);
+  background-image: url('https://emoji-css.afeld.me/emoji.css');
+}
+
+.legend-item.mountains.active:before {
+  background-color: var(--selected-color-mountains);
+}
+
+.legend-item.sea.active:before {
+  background-color: var(--selected-color-sea);
+}
+
+.legend-item.sand.active:before {
+  background-color: var(--selected-color-sand);
+}
+
+.legend-item.calamity.active:before {
+  background-color: var(--selected-color-calamity);
+}
+/*equipment*/
+#equipment-bag {
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-left: 5px;
+}
+
+#equipment-bag h2 {
+  margin-bottom: -10px;
+}
+
+#item-list {
+  list-style: none;
+  margin-left: -20px;
+}
+#item-list li {
+  margin-bottom: 2px;
+}
+
+/*statistics*/
+#statistics h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#statistics {
+  padding-bottom: 10px;
+  padding-left: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: -10px;
+}
+
+#health-stat, 
+#stamina-stat{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+#luck-stat {
+  margin-left: 20px;
+}
+
+#luck-bar {
+  height: 20px;
+  background-color: purple;
+  transition: width 0.5s;
+  color: white;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
+}
+
+/*footer*/
+footer {
+  background-color: #f8f8f8;
+  padding: 5px;
+  text-align: center;
+}
+/* Add a class for highlighting the selected grid item */
+.grid-item.selected {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
