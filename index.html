@@ -1,84 +1,104 @@
+<!--https://www.shutterstock.com/image-vector/mountains-low-poly-style-set-polygonal-1106476013-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-<nav id="title-navigation">
-  <!-- Add your title and navigation elements here -->
-  <h1>Paragraph Dungeon Crawler</h1>
-  <!-- Add your navigation elements here -->
-  <ul id="navigation-list">
-    <li><a href="#world-section">The World</a></li>
-    <li><a href="#story-section">Your Story</a></li>
-    <li><a href="#creator-section">The Creator</a></li>
-  </ul>
-</nav>
-<div id="book-container">
-  <div id="left-page">
-    <!-- Content for the left page -->
-    <h2>and so, your journey begins</h2>
-    <p>
+<body>
+  <nav>
+    <!-- Add your title and navigation elements here -->
+    <h1>Epic Paragraph Dungeon Crawler.</h1>
+    <!-- Add the toggle switch element -->
+    <div class="mode-toggle">
+      <input type="checkbox" id="dark-mode-toggle">
+      <label for="dark-mode-toggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+      </label>
+    </div>
+    <!-- Add your navigation elements here -->
+    <ul id="navigation-list">
+      <li><a href="#world-section">The World</a></li>
+      <li><a href="#story-section">Your Story</a></li>
+      <li><a href="#creator-section">The Creator</a></li>
+    </ul>
+  </nav>
+  <!--MOUNTAINS STARTS-->
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+  <div class="triangle"></div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi semper lacinia elementum. Praesent vel faucibus tortor, id bibendum felis. Ut sit amet orci nec eros pharetra tempus quis a turpis. Integer eget arcu in nibh rutrum tincidunt a sit amet elit. Nam id arcu tincidunt, lacinia diam vitae, auctor eros. Pellentesque eu rutrum tortor. Vestibulum eu finibus quam. Aliquam urna augue, imperdiet ut mauris tincidunt, sollicitudin blandit velit. Donec feugiat id enim eu consectetur. Vestibulum suscipit arcu in fermentum mollis. Praesent aliquam semper eros, ac laoreet purus sagittis at. Sed malesuada, mauris eu porta pulvinar, lorem nulla pulvinar justo, at vulputate leo eros sit amet nibh. Nulla porttitor at enim vitae luctus.
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+  <div class="triangle"></div>
 
-Morbi est velit, interdum at aliquam quis, molestie ac lorem. Curabitur auctor lectus massa, eu venenatis ipsum cursus at. Suspendisse molestie, ligula at vestibulum sagittis, purus urna fringilla quam, vel maximus mauris erat vitae dolor. Sed cursus massa eu orci maximus tristique. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ipsum nibh, tristique eget diam eleifend, laoreet auctor nunc. Morbi blandit faucibus velit, sed euismod ante tempor non. Duis tristique sapien a tellus sagittis tempor. Cras in erat ut sem rutrum scelerisque. Etiam eget risus sed lacus elementum maximus non et arcu. Donec condimentum facilisis ligula in cursus. Suspendisse finibus risus vitae nisi ultricies laoreet id vitae leo. Vivamus a interdum sapien, in porttitor ex.
+  <div class="triangle"></div>
+  <div class="triangle"></div>
+  <div class="triangle"></div>
 
-Sed et metus eu nisi sagittis dictum. Cras rutrum finibus pharetra. Aenean ut feugiat velit. Donec quam nisi, mollis id laoreet sollicitudin, dictum a ligula. Aliquam mattis nunc nisi, quis lobortis nunc iaculis eget. Sed vulputate, dolor eget pharetra accumsan, felis nunc condimentum felis, et vestibulum tortor ex facilisis nibh. Aenean accumsan maximus purus eu dictum. Donec nec tristique justo, posuere porta eros. Pellentesque vitae mi a metus laoreet mattis. Integer at aliquet magna. Maecenas sit amet risus id leo congue iaculis.
+  <div id="particle-container"></div>
+  <!--MOUNTAINS ENDS-->
 
-Quisque vehicula magna eu mollis molestie. Nunc malesuada dui eu sem sagittis sodales. Etiam sit amet ante ac nisl congue euismod. Donec nec libero ex. Aenean dictum, nunc eu rutrum varius, eros dolor sodales leo, sed ultrices ex felis vel dolor. Nam iaculis lobortis justo, vel tristique turpis rutrum non. Curabitur laoreet mi convallis orci condimentum, in condimentum elit congue.
-
-Mauris pharetra, tortor id molestie molestie, turpis nulla cursus massa, vitae pellentesque nunc orci finibus purus. Aliquam erat volutpat. Sed vel lacus at ipsum convallis luctus. Nam volutpat, sapien et sollicitudin vehicula, tellus felis varius tortor, nec euismod enim diam sit amet augue. Etiam et augue eget mi iaculis venenatis vel vel dui. Proin mollis suscipit quam, quis sollicitudin orci gravida sit amet. Curabitur dignissim mi quis risus bibendum volutpat. Mauris elementum ipsum arcu, ac tempus risus dignissim quis. Ut molestie interdum tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-    <!-- Add more content as needed -->
+  <div id="book-container">
+    <div id="left-page">
+      <!-- Content for the left page -->
+      <iframe src="add source for file here"></iframe>
+      <!-- Add more content as needed -->
+    </div>
+    <div id="right-page">
+      <h2 id='map'>Map</h2>
+      <div id="grid-legend-container">
+        <div id="grid-container" class="grid-container">
+          <!-- grid items -->
+        </div>
+        <div id="legend">
+          <h2>Legend</h2>
+          <label class="legend-item" data-color="green">
+            <input type="radio" name="legend-item" value="forest"> Forest ☴
+          </label>
+          <label class="legend-item" data-color="darkgrey">
+            <input type="radio" name="legend-item" value="mountains"> Mountains ☶
+          </label>
+          <label class="legend-item" data-color="blue">
+            <input type="radio" name="legend-item" value="sea"> Water ☵
+          </label>
+          <label class="legend-item" data-color="#ebc55e">
+            <input type="radio" name="legend-item" value="sand"> Sand ☷
+          </label>
+          <label class="legend-item" data-color="purple">
+            <input type="radio" name="legend-item" value="calamity"> Calamity ☳
+          </label>
+        </div>
+      </div>
+      <div id="equipment-bag">
+        <h2>Equipment Bag</h2>
+        <ul id="item-list">
+          <li>Sword 🗡️</li>
+          <li>Shield 🛡️</li>
+          <li>Potion 🧪</li>
+          <!-- Add more items dynamically or statically -->
+        </ul>
+      </div>
+      <div id="statistics">
+        <h2>Statistics</h2>
+        <div id="health-stat">
+          <div id="health-bar" class="hidden"></div>
+          <button id="health-button" class="button-89">Health</button>
+        </div>
+        <div id="stamina-stat">
+          <div id="stamina-bar" class="hidden"></div>
+          <button id="stamina-button" class="button-89">Stamina</button>
+        </div>
+        <div id="luck-stat">
+          <div id="luck-bar" class="hidden"></div>
+          <button id="luck-button" class="button-89">Luck</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id="right-page">
-    <h2>Map</h2>
-    <div id="grid-legend-container">
-      <div id="grid-container" class="grid-container">
-        <!-- grid items -->
-      </div>
-      <div id="legend">
-        <h2>Legend</h2>
-       <label class="legend-item" data-color="green">
-        <input type="radio" name="legend-item" value="forest"> Forest
-       </label>
-       <label class="legend-item" data-color="darkgrey">
-          <input type="radio" name="legend-item" value="mountains"> Mountains
-       </label>
-       <label class="legend-item" data-color="blue">
-          <input type="radio" name="legend-item" value="sea"> Water
-       </label>
-       <label class="legend-item" data-color="#ebc55e">
-          <input type="radio" name="legend-item" value="sand"> Sand
-       </label>
-       <label class="legend-item" data-color="purple">
-          <input type="radio" name="legend-item" value="calamity"> Calamity
-       </label>
-      </div>
-    </div>
-    <div id="equipment-bag">
-      <h2>Equipment Bag</h2>
-      <ul id="item-list">
-        <li>Sword</li>
-        <li>Shield</li>
-        <li>Potion</li>
-        <!-- Add more items dynamically or statically -->
-      </ul>
-    </div>
-    <div id="statistics">
-      <h2>Statistics</h2>
-      <div id="health-stat">
-        <div id="health-bar" class="hidden"></div>
-        <button id="health-button">Health</button>
-      </div>
-      <div id="stamina-stat">
-        <div id="stamina-bar" class="hidden"></div>
-        <button id="stamina-button">Stamina</button>
-      </div>
-      <div id="luck-stat">
-        <div id="luck-bar" class="hidden"></div>
-        <button id="luck-button">Luck</button>
-      </div>
-    </div>
-  </div>
-</div>
-<footer>
-  <!-- Footer content goes here -->
-  <p>© 2023 Epic Paragraph Dungeon Crawler. All rights reserved.</p>
-</footer>
+
+  <footer>
+    <!-- Footer content goes here -->
+    <p>© 2023 Epic Paragraph Dungeon Crawler. All rights reserved.</p>
+  </footer>
+</body>
